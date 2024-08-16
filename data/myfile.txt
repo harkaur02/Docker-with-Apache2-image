@@ -6,5 +6,9 @@ Terminal commands to use:
 # Run container from above built image
 Pragra-Docker-slide76-demo1 % docker run -idt --name server3 -v ./data/:/var/www/html -p 8081:80 myserver:v2
 
-$ execute container in bash Terminal command
-docker exec -it mycontainer bash
+# execute container in bash Terminal command
+$ docker exec -it mycontainer bash
+$ cd /etc/apache2
+$ ls 
+$ cat apache2.conf //at the end of this file, it shows it listens to port 80 by default, thats how we know to map port:80 
+ 
