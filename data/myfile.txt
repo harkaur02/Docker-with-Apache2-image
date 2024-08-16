@@ -1,0 +1,10 @@
+Created a Dockerfile that creates a volume at /var/www/html for an Apache2 server on ubuntu20
+Terminal commands to use:
+
+# Buils image commands
+
+# Run container from above built image
+Pragra-Docker-slide76-demo1 % docker run -idt --name server3 -v ./data/:/var/www/html -p 8081:80 myserver:v2
+
+$ execute container in bash Terminal command
+docker exec -it mycontainer bash
